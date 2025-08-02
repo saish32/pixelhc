@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Destinations</title>
+  <link rel="stylesheet" href="explore.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+      <nav class="navbar">
+    <div class="logo">ExploreScape</div>
+    <ul class="nav-links">
+      <li><!-- explore.html -->
+<a href="index.html" onclick="sessionStorage.setItem('fromExplore', 'true')">Home</a>
+</li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="index.html#plan">Plan Trip</a></li>
+      <li><a href="index.html#team">Our Team</a></li>
+    </ul>
+  </nav>
+   <header class="explore-header">
+    <h1>Explore Destinations</h1>
+    <p>Scroll sideways to see popular places</p>
+  </header>
+
+<section class="marquee-container">
+  <div class="marquee-track">
+    
+    <div class="place-card">
+      <img src="images/place1.avif" alt="Place 1" />
+      <p class="description">Hawa Mahal, Jaipur	Iconic pink palace</p>
+    </div>
+    <div class="place-card">
+      <img src="images/place2.jpg" alt="Place 2" />
+      <p class="description">Qutub Minar, Delhi	Tall red sandstone tower</p>
+    </div>
+    <div class="place-card">
+      <img src="images/place3.webp" alt="Place 3" />
+      <p class="description">Santorini, Greece Cliffside houses with sunset</p>
+    </div>
+    <div class="place-card">
+      <img src="images/place4.jpg" alt="Place 4" />
+      <p class="description">Colosseum, Rome	Ancient Roman arena</p>
+    </div>
+    <div class="place-card">
+      <img src="images/place5.jpg" alt="Place 5" />
+      <p class="description">Iguazu  rainforest waterfall system.
+</p>
+    </div>
+    <div class="place-card">
+      <img src="images/place6.jpg" alt="Place 6" />
+      <p class="description">Golden Temple—Sacred Sikh shrine.
+</p>
+    </div>
+
+    
+    <div class="place-card">
+      <img src="images/place1.avif" alt="Place 1" />
+      <p class="description">Hawa Mahal, Jaipur	Iconic pink palace </p>
+    </div>
+    <div class="place-card">
+      <img src="images/place2.jpg" alt="Place 2" />
+      <p class="description">Qutub Minar, Delhi	Tall red sandstone tower</p>
+    </div>
+  <div class="place-card">
+      <img src="images/place3.webp" alt="Place 3" />
+      <p class="description">Santorini, Greece	Cliffside houses with sunset</p>
+    </div>
+    <div class="place-card">
+      <img src="images/place4.jpg" alt="Place 4" />
+      <p class="description">Colosseum, Rome	Ancient Roman arena</p>
+    </div>
+    <div class="place-card">
+      <img src="images/place5.jpg" alt="Place 5" />
+      <p class="description">Iguazu rainforest waterfall system.</p>
+    </div>
+    <div class="place-card">
+      <img src="images/place6.jpg" alt="Place 6" />
+      <p class="description">Golden Temple—Sacred Sikh shrine.</p>
+    </div>
+</section>
+
+  </div>
+</body>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212; 
+  color: #f1f1f1; 
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #1e1e1e;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+
+.explore-header {
+  text-align: center;
+  padding: 2rem;
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #121212;
+  padding: 2rem 0;
+}
+.marquee-track {
+  display: inline-block;
+  animation: scroll-marquee 20s linear infinite;
+}
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+.place-card {
+  display: inline-block;
+  width: 300px;
+  margin: 0 20px;
+  vertical-align: top;
+  text-align: center;
+}
+.place-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.description {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+.image-block {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+}
+
+
+.section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+
+.caption {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .caption {
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+
+</style>
+
+    <script>
+        
+        const marqueeTrack = document.querySelector('.marquee-track');
+        const placeCards = document.querySelectorAll('.place-card');
+        
+        placeCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        marqueeTrack.appendChild(clone);
+        });
+    </script>
+   
+
+</html>

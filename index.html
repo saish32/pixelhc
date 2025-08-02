@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExploreScape – Travel Visual</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div id="loader-wrapper">
+  <div class="loader-content">
+    <span id="loader-count" class="loader-count">0 – 100</span>
+
+    <div class="clip-text">
+      <span class="clip-line" style="animation-delay: 0.2s">YOUR</span>
+      <span class="clip-line" style="animation-delay: 0.5s">WEB EXPERIENCE</span>
+      <span class="clip-line" style="animation-delay: 0.8s">
+        IS LOADING RIGHT 
+        <span id="now-text" class="now-text">NOW</span>
+      </span>
+    </div>
+
+    <div class="loader-hint">
+      Please wait<br />a few seconds.
+    </div>
+  </div>
+</div>
+
+
+<div id="main-content">
+  
+
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">ExploreScape</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="#plan">Plan Trip</a></li>
+      <li><a href="#team">Our Team</a></li>
+    </ul>
+  </nav>
+
+  
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1>ExploreScape</h1>
+      <p>Your Journey Begins Here</p>
+    </div>
+  </header>
+
+  <section class="section fade-in" id="explore">
+    <h2>Golden Moments</h2>
+    <img src="images/pic 1.jpg" alt="Scene 1" class="image-block" />
+    <p class="caption">This stunning sunset scene shows the Tilon ki Pol...</p>
+  </section>
+
+  <section class="section fade-in" id="plan">
+    <h2>Plan Your Escape</h2>
+    <img src="images/pic2.jpg" alt="Scene 2" class="image-block" />
+    <p class="caption">Write a call to action or travel idea here.</p>
+    
+    <button onclick="alert('Trip planner coming soon!')">Start Planning</button>
+  </section>
+
+
+  <section class="section team-section fade-in" id="team">
+    <h2>Our Team</h2>
+    <ul class="team-list">
+      <li onmouseover="showTeamMember('images/face1.jpeg')">Saish Raut</li>
+      <li onmouseover="showTeamMember('images/face2.webp')">Anish sable</li>
+      <li onmouseover="showTeamMember('images/face3.webp')">Aditya Prasad</li>
+    </ul>
+    <div class="team-image-container">
+      <img id="team-image" src="" alt="Team Member" />
+    </div>
+  </section>
+
+ 
+  <footer>
+    <p>© 2025 ExploreScape. Built for travel lovers.</p>
+  </footer>
+  </div>
+
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
